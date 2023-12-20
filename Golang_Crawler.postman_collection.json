@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "231a550b-0ce9-494d-9061-79d5bfd6b029",
+		"name": "Golang Crawler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3401374"
+	},
+	"item": [
+		{
+			"name": "GET Jobs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/jobs",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"jobs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST crawl job portal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"url\": \"https://boards.greenhouse.io/monzo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/crawl",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"crawl"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

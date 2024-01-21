@@ -1,6 +1,6 @@
 # Go Crawler API
 
-API to web scraping job portals
+API to web scraping job portals and store the data in PostgreSQL
 
 Right now only supports greenhouse.io
 
